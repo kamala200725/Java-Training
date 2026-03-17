@@ -1,0 +1,15 @@
+import java.util.*;
+class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n,s;
+        int p=1;
+        n=sc.nextInt();
+        while(n>0){
+            s=n%10;
+            p=p*s;
+            n=n/10;
+        }
+        System.out.println(p);
+    }
+}
