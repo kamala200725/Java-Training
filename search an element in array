@@ -1,0 +1,29 @@
+import java.util.*;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n;
+        n=sc.nextInt();
+        int count=0;
+        int[]a=new int[n];
+        for (int i=0;i<n;i++){
+            a[i]=sc.nextInt();
+        }
+        int s=sc.nextInt();
+        for(int i=0;i<n;i++){
+            if(s==a[i]){
+               count++;
+            }
+            
+          
+        }
+        if(count==1)
+        {
+         System.out.println("Found");
+        }
+        else
+        {
+             System.out.println("Not Found");
+        }
+    }
+}
